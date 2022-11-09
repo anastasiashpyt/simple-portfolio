@@ -1,0 +1,157 @@
+body, html {
+    height: 100%;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    padding: 20px 40px;
+
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav ul li a:active {
+    color: white;
+    background-color: darkred;
+}
+
+.c-site-header {
+    height: 100%;
+    color: white;
+    background-image: url("https://i.pinimg.com/originals/ed/e1/60/ede1605aa1bca48ea8036e56c0a781c7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2%;
+}
+
+.c-site-header h1 {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+#about {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 2%;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+.about-txt,
+.about-img {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-txt {
+    width: 80%;
+}
+
+#projects{
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+#projects h2,
+#projects h3{
+    text-align: center;
+}
+
+#projects iframe{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+#projects p {
+    text-align: center;
+}
+
+.c-site-footer {
+    background-color: gray;
+    padding: 5% 0;
+    text-align: center;
+    color: white;
+}
+
+@media(max-width: 750px) {
+    nav ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+
+    nav ul li a:hover{
+        color: black;
+        background-color: transparent;
+    }
+
+    .c-site-header h1 {
+        position: absolute;
+        left: 30px;
+        top: 150px;
+    }
+
+    #about {
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .about-txt,
+    .about-img,
+    #tech,
+    #tech iframe{
+        width: 100%;
+    }
+
+    #tech p {
+        padding: 5%;
+    }
+
+    .c-site-header,
+    #about,
+    #tech,
+    .c-site-footer {
+        padding-top: 100px;
+    }
+
+}
